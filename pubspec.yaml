@@ -12,16 +12,11 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  firebase_core: ^1.4.0
-  firebase_auth: ^3.0.1
-  cloud_firestore: ^2.5.3
   image_picker: ^0.8.3
   intl: ^0.17.0
   google_fonts: ^2.1.0
   fluttertoast: any
   shared_preferences: ^2.0.7
-  firebase_crashlytics: any
-  firebase_performance: ^0.7.1+4
   flutter_markdown: ^0.6.8
   resizable_widget: ^1.0.5
   flutter_riverpod: ^1.0.3
