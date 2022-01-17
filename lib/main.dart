@@ -25,7 +25,6 @@ class FiveSensesTellDraft extends StatelessWidget {
     return MaterialApp(
       home: CoverPage(),
       title: 'FiveSensesTellDraft',
-      theme: ThemeData.light(),
     );
   }
 }
