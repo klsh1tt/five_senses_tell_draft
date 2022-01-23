@@ -1,4 +1,4 @@
-import 'package:five_senses_tell_draft/presentations/cover/cover_page.dart';
+import 'package:five_senses_tell_draft/views/cover_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
