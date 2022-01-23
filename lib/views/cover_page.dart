@@ -23,7 +23,7 @@ class CoverPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer(
       builder: (context, watch, child) {
-        final pageType = ;
+        final pageType = watch(pageTypeProvider);
 
         final tabItems = [
           const BottomNavigationBarItem(
