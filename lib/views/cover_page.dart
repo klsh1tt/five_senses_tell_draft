@@ -14,39 +14,25 @@ enum PageType {
 }
 
 class CoverPage extends StatelessWidget {
-  final List<Widget> _pageList = <Widget>[
-    FirstPage(),
-    SecondPage(),
-  ];
-  
+  const CoverPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Consumer(
-      builder: (context, watch, child) {
-        final pageType = watch(pageTypeProvider);
-
-        final tabItems = [
-          const BottomNavigationBarItem(
-            icon: Icon(Icons.face),
-            label: '',
-          ),
-          const BottomNavigationBarItem(
-            icon: Icon(Icons.fastfood),
-            label: '',
-          ),
-        ];
-
-        return Scaffold(
-          body: _pageList[pageType.state.index],
-          bottomNavigationBar: BottomNavigationBar(
-            currentIndex: pageType.state.index,
-            onTap: (index) {
-              pageType.state = PageType.values[index];
-            },
-            items: tabItems,
-          ),
-        );
-      },
+    return Center(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('FiveSensesTellDraft'),
+        ),
+        body: Center(
+            child: ElevatedButton(
+          child: Text('次のページへ'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => FirstPage()),
+            );
+          },
+        )),
+      ),
     );
   }
 }
