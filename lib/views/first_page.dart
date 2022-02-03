@@ -5,7 +5,7 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('hoge'),
+        title: Text('FirstPage'),
       ),
       drawer: Drawer(
         child: ListView(
