@@ -7,14 +7,12 @@ import 'package:intl/date_symbol_data_local.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initializeDateFormatting('ja_JP');
-  SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]).then((_) => {
-        runApp(
-          //Riverpodを使うための設定
-          ProviderScope(
-            child: FiveSensesTellDraft(),
-          ),
-        )
-      });
+  runApp(
+    //Riverpodを使うための設定
+    ProviderScope(
+      child: FiveSensesTellDraft(),
+    ),
+  );
 }
 
 class FiveSensesTellDraft extends StatelessWidget {
