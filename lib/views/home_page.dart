@@ -5,12 +5,15 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTabController(
       initialIndex: 1,
-      length: 3,
+      length: 4,
       child: Scaffold(
         appBar: AppBar(
           title: const Text('TabBar Widget'),
           bottom: const TabBar(
             tabs: <Widget>[
+              Tab(
+                text: '基本情報',
+              ),
               Tab(
                 icon: Icon(Icons.cloud_outlined),
               ),
@@ -33,6 +36,9 @@ class HomePage extends StatelessWidget {
             ),
             Center(
               child: Text("It's sunny here"),
+            ),
+            Center(
+              child: Text("hoge"),
             ),
           ],
         ),
