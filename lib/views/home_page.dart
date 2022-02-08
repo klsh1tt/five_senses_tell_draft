@@ -5,7 +5,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTabController(
       initialIndex: 1,
-      length: 4,
+      length: 7,
       child: Scaffold(
         appBar: AppBar(
           title: const Text('TabBar Widget'),
@@ -23,22 +23,40 @@ class HomePage extends StatelessWidget {
               Tab(
                 icon: Icon(Icons.brightness_5_sharp),
               ),
+              Tab(
+                icon: Icon(Icons.brightness_5_sharp),
+              ),
+              Tab(
+                icon: Icon(Icons.brightness_5_sharp),
+              ),
+              Tab(
+                icon: Icon(Icons.brightness_5_sharp),
+              ),
             ],
           ),
         ),
         body: const TabBarView(
           children: <Widget>[
             Center(
-              child: Text("It's cloudy here"),
+              child: Text("基本情報のページ"),
             ),
             Center(
-              child: Text("It's rainy here"),
+              child: Text("写真のページ"),
             ),
             Center(
-              child: Text("It's sunny here"),
+              child: Text("手書きのページ"),
             ),
             Center(
-              child: Text("hoge"),
+              child: Text("記述1のページ（視覚/聴覚)"),
+            ),
+            Center(
+              child: Text("記述2のページ（嗅覚/触覚）"),
+            ),
+            Center(
+              child: Text("記述3のページ（味覚/第6感）"),
+            ),
+            Center(
+              child: Text("previewのページ"),
             ),
           ],
         ),
