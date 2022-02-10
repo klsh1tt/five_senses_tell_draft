@@ -11,24 +11,31 @@ class HomePage extends StatelessWidget {
           title: const Text('TabBar Widget'),
           bottom: const TabBar(
             tabs: <Widget>[
+              // 基本情報のページ
               Tab(
                 text: '基本情報',
               ),
+              // 写真のページ
               Tab(
                 icon: Icon(Icons.cloud_outlined),
               ),
+              // 手書きのページ
               Tab(
                 icon: Icon(Icons.beach_access_sharp),
               ),
+              // 記述1のページ（視覚/聴覚)
               Tab(
                 icon: Icon(Icons.brightness_5_sharp),
               ),
+              // 記述2のページ（嗅覚/触覚）
               Tab(
                 icon: Icon(Icons.brightness_5_sharp),
               ),
+              // 記述3のページ（味覚/第6感）
               Tab(
                 icon: Icon(Icons.brightness_5_sharp),
               ),
+              // previewのページ
               Tab(
                 icon: Icon(Icons.brightness_5_sharp),
               ),
