@@ -23,6 +23,7 @@ class HomePage extends StatelessWidget {
               Tab(
                 icon: Icon(Icons.fingerprint),
                 //ここに手書きページを表示させるコードを入れる
+                
               ),
               // 記述1のページ（視覚/聴覚)
               Tab(
