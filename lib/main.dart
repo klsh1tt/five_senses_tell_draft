@@ -9,7 +9,7 @@ Future<void> main() async {
   await initializeDateFormatting('ja_JP');
   runApp(
     //Riverpodを使うための設定
-    ProviderScope(
+    ProviderScope( 
       child: FiveSensesTellDraft(),
     ),
   );
